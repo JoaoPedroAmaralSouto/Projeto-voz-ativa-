@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Feed - Projeto Voz Ativa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="feed-page">
+  <header>
+    <h2>Projeto Voz Ativa</h2>
+    <nav>
+      <a href="feed.html">Início</a>
+      <a href="perfil.html">Perfil</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- NOVO FORMULÁRIO -->
+    <section class="post-form">
+      <h3>Nova Ocorrência</h3>
+      <form action="#" method="post">
+        <input type="text" name="titulo" placeholder="Título da denúncia (ex: Buraco na rua)" required>
+        <input type="text" name="local" placeholder="Localização (ex: Rua X, nº Y)" required>
+        <textarea name="descricao" rows="4" placeholder="Descreva o problema..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <!-- POSTS EXISTENTES -->
+    <div class="post">
+      <h3>Bueiro entupido na Rua das Flores</h3>
+      <p>Muito lixo acumulado, água parada e mau cheiro!</p>
+      <button class="like-btn">Curtir 👍 <span>25</span></button>
+
+      <div class="comentarios">
+        <h4>Comentários</h4>
+        <p><strong>Maria:</strong> Isso está assim há semanas, ninguém da prefeitura aparece aqui!</p>
+        <p><strong>Carlos:</strong> As crianças estão brincando perto disso, é um perigo total!</p>
+        <p><strong>Juliana:</strong> Uberaba merece mais atenção, isso é básico!</p>
+      </div>
+    </div>
+
+    <div class="post">
+      <h3>Poste sem luz na Av. Central</h3>
+      <p>A rua está totalmente escura à noite. Perigo para pedestres.</p>
+      <button class="like-btn">Curtir 👍 <span>17</span></button>
+
+      <div class="comentarios">
+        <h4>Comentários</h4>
+        <p><strong>Roberto:</strong> Já foi feita solicitação faz 2 meses! Absurdo.</p>
+        <p><strong>Ana Paula:</strong> Eu moro aqui e não consigo sair à noite com medo!</p>
+        <p><strong>Luciana:</strong> Até quando vamos ficar no escuro? Vergonhoso.</p>
+      </div>
+    </div>
+
+    <section class="mapa">
+      <h3>Veja os problemas mapeados</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60080.65378733273!2d-47.990818398117845!3d-19.753418468652484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94bad03162627637%3A0x8e83d9edb0f8e15c!2sUberaba%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1750791009679!5m2!1spt-BR!2sbr"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+</body>
+
+</html>

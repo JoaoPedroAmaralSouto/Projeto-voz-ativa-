@@ -1,0 +1,236 @@
+/* Paleta reformulada */
+:root {
+  --azul-principal: #005fa3;
+  --azul-secundario: #0077cc;
+  --cinza-fundo: #f2f2f2;
+  --branco: #ffffff;
+  --texto: #003366;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--cinza-fundo);
+  color: var(--texto);
+}
+
+/* Cabeçalho */
+header {
+  background-color: var(--azul-principal);
+  color: var(--branco);
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: var(--branco);
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Login */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: var(--branco);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 300px;
+}
+
+.login-container h1 {
+  margin-bottom: 25px;
+  color: var(--azul-principal);
+}
+
+.login-container input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid var(--azul-principal);
+  border-radius: 6px;
+}
+
+.login-container button {
+  background-color: var(--azul-principal);
+  color: var(--branco);
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.login-container button:hover {
+  background-color: var(--azul-secundario);
+}
+
+/* Feed */
+.feed-page main {
+  padding: 30px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.post {
+  background: var(--branco);
+  padding: 20px;
+  margin-bottom: 25px;
+  border-left: 6px solid var(--azul-secundario);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.post h3 {
+  margin-top: 0;
+}
+
+.like-btn {
+  background-color: var(--azul-principal);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.like-btn:hover {
+  background-color: var(--azul-secundario);
+}
+
+/* NOVO: Formulário de nova ocorrência */
+.post-form {
+  background: var(--branco);
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-form h3 {
+  margin-top: 0;
+  color: var(--azul-principal);
+}
+
+.post-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post-form input,
+.post-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.post-form button {
+  align-self: flex-start;
+  background-color: var(--azul-principal);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.post-form button:hover {
+  background-color: var(--azul-secundario);
+}
+
+/* Perfil */
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.profile-card {
+  background: var(--branco);
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 30px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card img {
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.user-posts .post span {
+  display: block;
+  margin-top: 8px;
+  color: var(--azul-secundario);
+}
+
+.profile-card img {
+  border-radius: 50%;
+  margin-bottom: 12px;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid var(--azul-principal);
+}
+
+.mapa {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mapa h3 {
+  color: var(--azul-principal);
+  margin-bottom: 15px;
+}
+
+.comentarios {
+  margin-top: 15px;
+  background-color: #f8f8f8;
+  border-left: 4px solid var(--azul-secundario);
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.comentarios h4 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: var(--azul-principal);
+}
+
+.comentarios p {
+  margin: 5px 0;
+}
